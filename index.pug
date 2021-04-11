@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
+        meta(property="og:title" content="Свадьба")
+        meta(property="og:site_name" content="Свадьба Кости и Инны")
+        meta(property="og:url" content="http://gllip.ru/kiwedding/")
+        meta(property="og:description" content="Рады приветствовать всех на сайте посвященому свадьбе Кости и Инны")
+        meta(property="og:image" content="http://gllip.ru/kiwedding/images/form-img.jpg")
+        link(rel="shortcut icon" href="images/ki-icon.ico" type="image/x-icon")
+        title Свадьба
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet" type="text/css" href="css/jquery.countdown.css")
+    body
+        #page-wrapper
+            header
+                h1.title Готовим печень, штампуем бабки! &#169;КЛАН “КОТЯО”
+                h2.name Инна &#38; Константин
+                h3.date Ждут вас на двухдневный марафон безудержного веселья в честь создания клана “КОТЯО”
+            .timer
+                .container
+                    h2.title До свадьбы осталось:
+                    img(src="images/timer-title-img.svg", alt="")
+                    h4 24 апреля 2021
+                    .content         
+                        #defaultCountdown                      
+            .newlyweds
+                h3 Лучше поздно, чем никогда, так как рано - бессмысленно, но лучше, все таки вовремя!
+                p Говорят, что надо пережить кризис, узнать друг друга в стрессовых ситуациях и только тогда принимать решение о создании совместного будущего. Итак! ТА-ДА-ДА-ДАААААМ! Мы пережили коронавирус, самоизоляцию и прочие бешеные плюшки 2020 года и мы все еще вместе! Именно поэтому МЫ ЖЕНИМСЯЯЯЯЯЯЯ!!!!!
+                p *Ну и потому что любим друг друга))
+                .newlyweds-blocks-wrap 
+                    #hexagon1.newlyweds-hexagon
+                        p.title Инна
+                        p.subtitle невеста
+                        a(href="https://vk.com/id144416433" target="_blank") 
+                            img(src="images/newlyweds-vk-icon.svg", alt="vk-icon")
+                    #hexagon2.newlyweds-hexagon
+                    #hexagon3.newlyweds-hexagon
+                    #hexagon4.newlyweds-hexagon
+                        p.title Константин
+                        p.subtitle жених
+                        a(href="https://vk.com/shpynevko" target="_blank") 
+                            img(src="images/newlyweds-vk-icon.svg", alt="vk-icon")
+                    #hexagon5.newlyweds-hexagon
+                        p Адовая смесь энтузиазма, граничащего с безумием, светлого взгляда на мир, желания что-нибудь сломать (иногда кого-нибудь) и захватить мир. 
+                            |Душка, одним словом. Замуж выйти согласилась из корыстных целей - планирую перенять способность мужа выглядеть идеально на любом фото, с любого ракурса)
+                    #hexagon6.newlyweds-hexagon
+                        p.subtitle Клан “Котяо”
+                    #hexagon7.newlyweds-hexagon
+                        p Если вы никогда не видели живую харизму, то вот она. Собственной персоной. В чистом виде. Тот, кто знает - уже любит, кто еще не знаком - обречен полюбить. 
+                            |Гвоздь любой программы, кочерга любого тусняка. Определил будущую жену за 5 минут (все дело в клетчатых штанах, мужики!)
+            .program
+                h3.title Программа мероприятия
+                .nav-day 
+                    button.day-btn.day1
+                        p День 1
+                    button.day-btn.day2.inactive  
+                        p День 2
+                h5.subtitle 24 апреля
+                #day1.day-content
+                    .day-content-block 
+                        img(src="images/program-img-1.jpg", alt="")
+                        .day-text 
+                            .day-text-header 
+                                p Бракосочетание
+                            .day-text-content
+                                p.purple где
+                                p ул. Николая Гаврилова, 1Б, 1 этаж, “Box Event Hall”
+                                p.purple когда
+                                p 17:30
+                    .day-content-block 
+                        img(src="images/program-img-2.jpg", alt="")
+                        .day-text 
+                            .day-text-header 
+                                p Свадебный фуршет
+                            .day-text-content
+                                p.purple где
+                                p ул. Николая Гаврилова, 1Б, 1 этаж, “Box Event Hall”
+                                p.purple когда
+                                p 18:00 - 20:00
+                #day2.day-content.hidden
+                    .second-day-wrap 
+                        .text-content-wrap 
+                            .text-content
+                                p.title Чудо-Дом
+                                p.purple 25 апреля в 14:00
+                                p Всеобщий сбор состоится в прекрасном распрекрасном доме для проведения алкогольного чаепитиая.
+                                br
+                                p Завершение сего торжества:
+                                p.purple  26 апреля в 12:00
+                        .img-content 
+                            img(src="images/program-img-3.jpg", alt="")
+            .form
+                .form-wrap
+                    img(src="images/form-img.jpg", alt="")
+                    .form-content
+                        h4.title Перекличка
+                        form(class="form" id="form" name="form" method="post")
+                            .form-block
+                                input(type="text" name="name" placeholder="Имя" required)
+                            .form-block
+                                input(type="text" name="surname" placeholder="Фамилия")
+                            h5.subtitle Присутствие ...
+                            .form-block_vertical
+                                .form-block                                
+                                    input(type="checkbox" id="attendanceFurshet" name="furshet" value="furshet")
+                                    label(for="attendanceFurshet") Приду на фуршет
+                                .form-block
+                                    input(type="checkbox" id="attendanceHouse" name="house" value="house")
+                                    label(for="attendanceHouse") Буду в доме до позднего вечера
+                                .form-block
+                                    input(type="checkbox" id="attendanceNightHouse" name="nightHouse" value="nightHouse")
+                                    label(for="attendanceNightHouse") Останусь ночевать
+                                .form-block
+                                    input(type="checkbox" id="attendanceNone" name="atnone" value="atnone" disabled)
+                                    label(for="attendanceNone") Не смогу прийти  
+                            h5.subtitle Буду пить ...
+                            .form-block_vertical                   
+                                .form-block                                
+                                    input(type="checkbox" id="formVine" name="vine" value="vine")
+                                    label(for="formVine") Винишко
+                                .form-block
+                                    input(type="checkbox" id="formVodka" name="vodka" value="vodka")
+                                    label(for="formVodka") Воооодочка
+                                .form-block
+                                    input(type="checkbox" id="formCognac" name="cognac" value="cognac")
+                                    label(for="formCognac") Коньячелло
+                                .form-block
+                                    input(type="checkbox" id="formShamp" name="shamp" value="shamp")
+                                    label(for="formShamp") Шампусик
+                                .form-block
+                                    input(type="checkbox" id="formSam" name="sam" value="sam")
+                                    label(for="formSam") Самогончик
+                                .form-block
+                                    input(type="checkbox" id="formSidr" name="sidr" value="sidr")
+                                    label(for="formSidr") Сидрец
+                                .form-block
+                                    input(type="checkbox" id="formBeer" name="beer" value="beer")
+                                    label(for="formBeer") Пивосян
+                                .form-block
+                                    input(type="checkbox" id="formEnergetic" name="energetic" value="energetic")
+                                    label(for="formEnergetic") Энергетик со вкусом шампанского
+                                .form-block
+                                    input(type="checkbox" id="formWater" name="water" value="water")
+                                    label(for="formWater") Я за ЗОЖ, сварите мне компот
+                            input(type="submit" value="Отправить")
+            .welcome
+                h2.title И только попробуй не прийти! Мы знаем, где ты живешь! <br> (и придем к тебе всем табором сами)
+            .map
+                .map-block
+                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A6d4fee6b42f61fa3922f3bfb8e474b274301671b317a2ac3ef0630675c85bccb&amp;source=constructor" width="100%" height="330" frameborder="0")
+                .map-block-about.map-block-first
+                    img(src="images/map-first-img.svg", alt="")
+                    .title Регистрация
+                    .adress ул. Николая Гаврилова, 1Б, 
+                        span 1 этаж, “Box Event Hall”
+                .map-block-about
+                    img(src="images/map-second-img.svg", alt="")
+                    .title Чудо-Дом
+                    .adress СНТ ул. Станкостроитель, 8д
+                .map-block
+                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ba5a36299dfa32bd1f4b8fce4ad2b5a3608155db05769896c33fe79d21cb040&amp;source=constructor" width="100%" height="330" frameborder="0")
+            footer
+                .title 
+                    h4 Наши контакты
+                .contacts
+                    .contacts-block
+                        img(src="images/contact-fiance.svg", alt="")
+                        p.name Жених:
+                        .number 89500780650
+                    .contacts-block
+                        img(src="images/contact-bride.svg", alt="")
+                        p.name Невеста:
+                        .number 89087701136
+            .modal
+                .overlay.js-overlay-thank-you
+                    .popup.js-thank-you
+                        h2 Спасибо!
+                        .close-popup.js-close-thank-you
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js") 
+        script(type="text/javascript" src="js/main.js")       
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript")
+        script(type="text/javascript" src="js/plugin/jquery.plugin.js")
+        script(type="text/javascript" src="js/plugin/jquery.countdown.js")
+        script(type="text/javascript" src="js/plugin/jquery.countdown-ru.js")

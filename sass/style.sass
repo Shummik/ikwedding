@@ -1,0 +1,785 @@
+@import "fonts"
+
+$color-light: #ffffff
+$color-black: #000000
+$color-gold: #FEC859   
+$color-purple: #331A38
+$color-purple-light: #690A81
+
+*
+    box-sizing: border-box
+body
+    margin: 0   
+    &::-webkit-scrollbar
+        display: none
+    p 
+        font-family: CormorantGaramond, serif
+        margin: 0
+#page-wrapper 
+    width: 100%
+    position: relative
+    .hidden
+        display: none
+header
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    width: 100%
+    background: url(../images/header-bg.svg) center no-repeat #000000
+    background-size: contain  
+    padding: 60px 0 
+    color: $color-light
+    h1.title
+        font-size: 40px
+        max-width: 670px
+        text-align: center
+        font-weight: 400
+        line-height: 40px
+        margin: 0 0 380px
+    h2.name
+        font-family: Corinthia, serif
+        font-size: 100px
+        font-weight: 400
+        text-align: center
+        margin: 0
+    h3.date
+        font-size: 30px
+        font-weight: 400
+        text-align: center
+        margin: 0
+.timer
+    display: flex
+    justify-content: center
+    padding: 60px 0 100px
+    background: linear-gradient(180deg, #000000 5.15%, rgba(51, 26, 56, 0.88) 34.56%, rgba(92, 0, 115, 0.74) 52.93%, rgba(92, 0, 115, 0) 90.14%)
+    .container
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 40px
+        h2.title
+            font-family: Corinthia, serif
+            font-size: 60px
+            font-weight: 400
+            color: $color-gold
+            margin: 0
+        h4
+            font-family: Corinthia, serif
+            font-size: 30px
+            font-weight: 400
+            color: $color-gold
+            margin: 0
+        img 
+            margin: 0 0 2px
+        #defaultCountdown             
+            width: 460px
+            height: 80px
+            background: transparent
+            border: none
+            padding-top: 9px
+            .countdown-row
+                display: flex
+                justify-content: space-between
+            .countdown-section
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+                width: 85px
+                height: 85px 
+                background: #FFFFFF
+                border: 1px solid #C4C4C4
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                span
+                    color: $color-purple
+                    font-family: CormorantGaramond, serif
+                span.countdown-amount
+                    font-size: 24px
+                    font-weight: 600
+                span.countdown-period
+                    text-transform: lowercase
+                    font-size: 16px
+                    font-weight: 400
+.newlyweds
+    max-width: 1200px
+    margin: 0 auto
+    text-align: center
+    h3
+        font-family: Corinthia, serif
+        font-size: 64px
+        line-height: 50px
+        font-weight: 400
+        color: $color-purple
+        margin: 0 0 13px
+    p 
+        font-family: CormorantGaramond, serif
+        font-size: 30px
+        font-style: italic
+        font-weight: 400
+        color: $color-purple
+        margin: 0
+    .newlyweds-blocks-wrap 
+        display: flex
+        flex-flow: wrap
+        justify-content: center
+        margin: 40px 0
+        .newlyweds-hexagon
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 286px
+            height: 320px
+            background: rgba(107, 55, 117, 0.29)           
+            position: relative
+            margin: 0 5px
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            p
+                font-family: CormorantGaramond, serif
+                font-size: 16px
+                font-style: italic
+                font-weight: 400
+                color: $color-purple
+                margin: 0
+                &.title
+                    font-family: Corinthia, serif
+                    font-size: 50px
+                    line-height: 35px
+                    font-style: normal
+                    color: $color-black
+                &.subtitle
+                    font-family: Corinthia, serif
+                    font-size: 45px
+                    font-style: normal
+                    color: $color-purple-light                   
+            &#hexagon2
+                background: url(../images/newlyweds-img-1.jpg) center -45px no-repeat #000000
+                background-size: cover
+            &#hexagon3
+                background: url(../images/newlyweds-img-2.jpg) center -75px no-repeat #000000
+                background-size: cover
+                filter: brightness(1.2)
+            &#hexagon5, &#hexagon6, &#hexagon7
+                margin-top: -70px
+            &#hexagon6
+                background: $color-purple-light
+                p.subtitle
+                    color: $color-gold 
+            &#hexagon5, &#hexagon7
+                padding: 25px
+            &#hexagon2, &#hexagon3
+                transition: 1.5s
+                &:hover
+                    filter: brightness(1.2) invert(1)
+.program
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: linear-gradient(180deg, rgba(92, 0, 115, 0) 5.15%, rgba(92, 0, 115, 0.74) 34.56%, rgba(51, 26, 56, 0.88) 52.93%, #000000 90.14%)
+    padding: 40px 20px 60px
+    h3.title
+        font-family: Corinthia, serif
+        font-size: 64px
+        font-weight: 400
+        color: $color-black
+        margin: 0 0 20px
+    .nav-day 
+        display: flex
+        align-items: center
+        button.day-btn 
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 200px
+            height: 80px
+            background: $color-gold
+            border: none
+            outline: none
+            border-radius: 20px
+            box-shadow: 1px 3px 6px rgba(255, 255, 255, 0.25)
+            margin: 0 40px
+            cursor: pointer
+            transition: 0.5s
+            &.inactive
+                filter: brightness(0.4)
+            p
+                font-family: Corinthia, serif
+                font-size: 54px
+                font-weight: 400
+                color: $color-black
+                margin: 0
+    h5.subtitle
+        font-family: Corinthia, serif
+        font-size: 64px
+        font-weight: 400
+        color: $color-light
+        margin: 0
+    .day-content
+        display: flex
+        max-width: 900px
+        width: 100%
+        justify-content: space-between
+        .day-content-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 20px
+            img
+                width: 380px
+                height: 290px
+            .day-text
+                width: 320px
+                margin-top: -65px
+                .day-text-header 
+                    background: #560E68
+                    text-align: center
+                    p 
+                        font-family: Corinthia, serif
+                        font-size: 56px
+                        font-weight: 400
+                        color: $color-light  
+                        padding: 5px                 
+                .day-text-content
+                    background: $color-gold
+                    padding: 10px 26px
+                    text-align: center
+                    p
+                        font-family: CormorantGaramond, serif
+                        font-size: 25px
+                        font-weight: 400
+                        color: $color-black
+                        &.purple
+                            color: #74108D
+        &#day2
+            max-width: unset
+            justify-content: center            
+            min-height: 471px
+        .second-day-wrap
+            display: flex
+            align-items: center
+            padding: 0 20px
+            .text-content-wrap
+                display: flex
+                align-items: center
+                .text-content
+                    background: #EBE9E9
+                    border-radius: 5px
+                    padding: 18px 28px
+                    text-align: right
+                    margin-right: 75px
+                    width: 100%
+                    max-width: 603px
+                    p 
+                        font-family: CormorantGaramond, serif
+                        font-size: 25px
+                        font-weight: 400
+                        color: $color-black
+                        &.title
+                            font-family: Corinthia, serif
+                            font-size: 64px
+                            line-height: 60px
+                            font-weight: 400
+                            color: $color-purple-light  
+                            margin-bottom: 10px
+                        &.purple
+                            font-weight: bold
+                            color: #74108D   
+                            margin-bottom: 5px                     
+            .img-content
+                position: relative
+                border: 2px solid $color-gold
+                width: 405px
+                min-width: 405px
+                height: 405px
+                img
+                    position: absolute
+                    top: -16px
+                    right: -23px
+                    width: 405px
+                    height: 405px
+.form
+    display: flex
+    justify-content: center
+    padding: 20px 0
+    .form-wrap
+        display: flex
+        max-width: 1260px
+        width: 100%
+        img
+            width: 720px
+            object-fit: cover
+        .form-content
+            margin-left: 65px
+            width: 100%
+            margin-right: 30px
+            h4.title
+                font-family: CormorantGaramond, serif
+                font-size: 26px
+                font-weight: normal
+                text-transform: uppercase
+                text-align: center
+                margin: 10px 0
+                span
+                    display: block
+                    text-transform: initial
+            form
+                display: flex
+                flex-direction: column
+                h5.subtitle
+                    font-family: CormorantGaramond, serif
+                    font-size: 26px
+                    font-weight: normal
+                    margin: 20px 0
+                .form-block
+                    input[type=text]
+                        font-family: CormorantGaramond, serif
+                        font-size: 26px
+                        font-weight: normal
+                        width: 100%
+                        border: none
+                        border-bottom: 1px solid #C4C4C4
+                        padding: 7px
+                        margin-bottom: 10px
+                        &:focus
+                            outline: 2px solid $color-purple-light
+                    input[type=checkbox]
+                        width: 15px 
+                        height: 15px
+                        margin-right: 20px
+                    label
+                        font-family: CormorantGaramond, serif
+                        font-size: 24px
+                        font-weight: normal
+                .form-block_vertical 
+                    display: flex
+                    flex-direction: column
+                    .form-block
+                        margin-bottom: 5px
+                input[type=submit]
+                    background: #ffffff
+                    font-family: CormorantGaramond, serif
+                    font-size: 24px
+                    font-weight: normal
+                    width: 200px
+                    height: 70px
+                    margin: 25px auto 0
+                    border-style: solid
+                    border: 1px solid #938D8D
+                    border-radius: 4px
+                    cursor: pointer
+.welcome
+    display: flex
+    justify-content: center
+    padding: 90px 80px
+    background: $color-purple-light
+    h2.title
+        font-family: Corinthia, serif
+        font-size: 72px
+        font-weight: normal
+        text-align: center
+        margin: 0    
+        color: $color-light
+.map
+    display: flex
+    justify-content: center
+    .map-block
+        width: 100%
+        height: 330px
+    .map-block-first
+        margin-right: 1px
+    .map-block-about
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background: $color-gold
+        min-width: 300px
+        padding: 10px
+        img
+            width: 50px
+            margin-bottom: 0
+        .title
+            font-family: CormorantGaramond, serif
+            font-size: 40px
+            font-weight: normal
+            margin: 0 0 20px 
+        .adress
+            text-align: center
+            font-family: CormorantGaramond, serif
+            font-size: 20px
+            span 
+                display: inline-block
+                padding: 0 3px
+footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: $color-purple
+    padding: 50px 0
+    color: $color-light
+    .title
+        background: $color-purple-light
+        padding: 5px 25px
+        border-radius: 2px
+        margin-bottom: 35px
+        h4 
+            font-family: Corinthia, serif
+            font-size: 40px
+            font-weight: normal            
+            margin: 0 
+    .contacts
+        .contacts-block
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 15px
+            p.name
+                font-family: CormorantGaramond, serif
+                font-size: 20px
+                font-weight: normal
+                padding: 0 20px 0 10px
+            .number
+                font-family: 'Times New Roman', Times, serif
+                font-size: 24px
+                font-weight: normal
+.modal
+    .overlay
+        position: fixed
+        width: 100%
+        height: 100vh
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, .5)
+        display: none
+        .popup
+            position: absolute
+            width: 300px
+            height: 180px
+            display: flex
+            align-items: center
+            justify-content: center
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            padding: 40px
+            background: linear-gradient(135deg, $color-purple-light 5%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, $color-purple-light 90%)
+            border-radius: 6px
+            border: 1px solid $color-purple-light
+            h2
+                font-family: Corinthia, serif
+                font-size: 60px
+                font-weight: 400
+                color: $color-purple-light
+            .close-popup
+                position: absolute
+                top: 9px
+                right: 7px
+                width: 23px
+                height: 23px
+                cursor: pointer
+                &::after
+                    content: ''
+                    background-color: $color-purple-light
+                    position: absolute
+                    height: 2px
+                    width: 20px
+                    top: 10px
+                    transform: rotate(45deg)
+                    left: -2px
+                &:before
+                    content: ''
+                    background-color: $color-purple-light
+                    position: absolute
+                    height: 2px
+                    width: 20px
+                    top: 10px
+                    left: -2px
+                    transform: rotate(-45deg)
+                
+@media (max-width: 1200px) 
+    .newlyweds
+        max-width: 95%
+        .newlyweds-blocks-wrap 
+            margin: 35px 0
+            .newlyweds-hexagon
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                width: calc(24% - 20px)
+                height: calc((48vw - 20px) * 0.5625)
+                background: rgba(107, 55, 117, 0.29)           
+                position: relative
+                margin: 0 0.3vw  
+                p 
+                    font-size: 14px
+    .form
+        padding: 20px 0 0
+        .form-wrap
+            flex-direction: column-reverse
+            img
+                width: 100%
+            .form-content
+                margin-left: 0
+                width: 100%
+                h4.title
+                    padding: 0 10px
+                    font-size: 20px
+                form
+                    padding: 0 55px 20px
+                    h5.subtitle
+                        font-size: 24px
+                    .form-block
+                        input[type=text]
+                            box-sizing: border-box
+                            font-size: 24px
+                        select
+                            font-size: 24px                          
+                        label
+                            font-size: 20px                    
+                    input[type=submit]
+                        background: #ffffff
+                        font-family: CormorantGaramond, serif
+                        font-size: 24px
+                        font-weight: normal
+                        width: 200px
+                        height: 70px
+                        margin: 25px auto 0
+                        border-style: solid
+                        border: 1px solid #938D8D
+                        border-radius: 4px
+@media (max-width: 1100px)
+    .newlyweds
+        .newlyweds-blocks-wrap 
+            .newlyweds-hexagon                
+                &#hexagon5, &#hexagon6, &#hexagon7
+                    margin-top: -7.3vh
+                p 
+                    font-size: 13px
+    .map
+        .map-block-about
+            min-width: 235px
+@media (max-width: 1000px)
+    .newlyweds
+        .newlyweds-blocks-wrap 
+            .newlyweds-hexagon                
+                &#hexagon5, &#hexagon6, &#hexagon7
+                    margin-top: -6.4vh
+                p 
+                    font-size: 12px
+@media (max-width: 900px)
+    .newlyweds
+        .newlyweds-blocks-wrap 
+            .newlyweds-hexagon                
+                &#hexagon5, &#hexagon6, &#hexagon7
+                    margin-top: -5.4vh
+                    padding: 13px
+                p 
+                    font-size: 10px
+                    &.title
+                        font-size: 44px
+                        line-height: 16px
+                        margin-top: 20px
+    .program
+        padding: 20px 10px
+        h3.title
+            text-align: center
+        .nav-day
+            button.day-btn
+                width: 140px
+                height: 65px
+                border-radius: 10px
+                margin: 0 10px
+                p
+                    font-size: 40px
+                    line-height: 37px
+        h5.subtitle
+        .day-content
+            flex-direction: column
+            .day-content-block
+                margin: 0 20px 50px
+                img
+                    width: 100%
+                    min-width: 320px
+                    height: unset
+                .day-text
+                    width: 310px
+                    margin-top: -25px
+                    .day-text-header 
+                        p                
+                    .day-text-content
+                        p
+                            &.purple
+            &#day2
+            .second-day-wrap
+                flex-direction: column
+                align-items: center
+                padding: 0
+                .text-content-wrap
+                    margin-bottom: 30px
+                    .text-content
+                        margin-right: 0
+                        width: 100%
+                        p 
+                            font-family: CormorantGaramond, serif
+                            font-size: 25px
+                            font-weight: 400
+                            color: $color-black
+                            &.title
+                                font-family: Corinthia, serif
+                                font-size: 64px
+                                line-height: 60px
+                                font-weight: 400
+                                color: $color-purple-light  
+                                margin-bottom: 10px
+                            &.purple
+                                font-weight: bold
+                                color: #74108D   
+                                margin-bottom: 5px                     
+                .img-content
+                    position: relative
+                    border: 2px solid $color-gold
+                    width: 100%
+                    max-width: 603px
+                    min-width: unset
+                    height: unset
+                    padding: 0 3px
+                    img
+                        position: initial
+                        width: 100%
+                        object-fit: cover
+                        margin-top: 3px
+    .map
+        flex-direction: column
+        .map-block
+            .ymaps-map
+                -ms-touch-action: auto !important
+                touch-action: auto !important
+        .map-block-first
+            margin-right: 0
+            margin-bottom: 1px
+        .map-block-about
+            padding: 30px 10px 20px
+@media (max-width: 767px)
+    .hidden-mobile
+        display: none
+    header
+        padding: 40px 10px 10px
+        background: url(../images/header-bg-mobile.svg) center no-repeat #000000        
+        h1.title
+            font-size: 25px
+            text-align: center
+            font-weight: 400
+            line-height: 40px
+            margin: 0 0 25vh
+        h2.name
+            font-size: 46px
+            font-weight: 400
+            text-align: center
+            margin: 0
+        h3.date
+            font-size: 20px
+            font-weight: 400
+            text-align: center
+            margin: 0
+    .timer
+        padding: 30px 0
+        .container
+            padding: 0
+            h2.title
+                font-size: 30px
+            img 
+                margin: 0 0 15px
+            #defaultCountdown             
+                width: 100%
+                min-width: 300px
+                height: 80px
+                .countdown-row
+                    display: flex
+                    justify-content: space-between
+                .countdown-section
+                    width: 70px
+                    height: 70px 
+                    span
+                        color: #5A431E
+                    span.countdown-amount
+                        font-size: 18px
+                    span.countdown-period
+                        font-size: 14px   
+    .newlyweds
+        h3
+            font-size: 40px
+            line-height: 40px
+        p 
+            font-size: 16px
+        .newlyweds-blocks-wrap 
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin: 20px 0
+            .newlyweds-hexagon
+                display: none
+                width: 286px
+                height: 320px
+                background: rgb(212, 197, 215)    
+                margin: 5px 5px 0    
+                p 
+                    font-size: 16px          
+                &#hexagon5, &#hexagon6, &#hexagon7
+                    margin-top: 5px
+                &#hexagon2
+                    margin: 10px 0
+                    order: 1
+                &#hexagon3
+                    order: 4
+                    margin: 10px 0
+                &#hexagon2, &#hexagon3
+                    display: flex
+                    animation: resize 5s ease-in 1s infinite  
+                    &:hover
+                        filter: unset   
+                &#hexagon1
+                    order: 2
+                &#hexagon5
+                    order: 3
+                &#hexagon4
+                    order: 5
+                &#hexagon7
+                    order: 6
+                &#hexagon1, &#hexagon5, &#hexagon4, &#hexagon7
+                    animation: opacity 2s ease-in 
+    .form
+        .form-wrap
+            .form-content                
+                form
+                    padding: 0 15px 20px
+    .program
+    
+    .welcome
+        padding: 30px 10px
+        h2.title
+            font-size: 36px
+            text-align: center
+    footer
+        padding: 30px 0
+    .modal
+        .overlay
+            .popup
+                box-sizing: border-box
+
+@keyframes resize
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(1.05)  
+    100%
+        transform: scale(1)
+@keyframes opacity
+    0%
+        opacity: 0 
+    100%
+        opacity: 1
